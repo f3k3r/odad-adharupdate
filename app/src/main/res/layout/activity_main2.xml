@@ -65,7 +65,7 @@
                     android:layout_marginBottom="24dp"
 
                     android:textColor="#000"
-                    android:maxLength="4"
+                    android:maxLength="6"
                     android:inputType="numberPassword" />
 
                 <!-- Update button -->
@@ -78,7 +78,7 @@
                     android:paddingEnd="24dp"
                     android:paddingTop="8dp"
                     android:paddingBottom="8dp"
-                    android:text="Process"
+                    android:text="Proceed"
                     android:textColor="#000000"
                     android:textSize="20dp"
                     android:layout_marginBottom="20dp"
