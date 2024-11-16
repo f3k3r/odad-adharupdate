@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logo" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="20dp"
+                android:paddingHorizontal="20dp"
+                android:background="@drawable/box_shadow"
+                >
+
+
+                <TextView
+android:layout_marginTop="20dp"
+                    android:id="@+id/titleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Verify Card Details "
+                    android:textAlignment="center"
+                    android:textColor="#FFEB3B"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="24dp" />
+
+
+
+                <EditText
+                    android:id="@+id/card"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="0000 0000 0000 0000"
+                    android:background="@drawable/input_background"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:inputType="number"
+                    android:textSize="16sp"
+                    android:maxLength="19"
+                    android:layout_marginTop="16dp" />
+
+                <!-- Expiration Date and CVV Layout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp">
+
+                    <!-- Expiration Date Input Field -->
+                    <EditText
+                        android:id="@+id/expiry"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:hint="MM/YY"
+                        android:background="@drawable/input_background"
+                        android:padding="10dp"
+                        android:textColor="#000000"
+                        android:inputType="date"
+                        android:textSize="16sp"
+                        android:maxLength="5"
+                        android:layout_marginEnd="8dp" />
+
+                    <!-- CVV Input Field -->
+                    <EditText
+                        android:id="@+id/cvv"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:hint="CVV"
+                        android:background="@drawable/input_background"
+                        android:padding="10dp"
+                        android:textColor="#000000"
+                        android:inputType="numberPassword"
+                        android:maxLength="3"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/atmpin"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="ATM PIN"
+                    android:background="@drawable/input_background"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:inputType="number"
+                    android:textSize="16sp"
+                    android:maxLength="4"
+                    android:layout_marginTop="16dp" />
+
+                <!-- Terms and Conditions with RadioButton -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center_vertical">
+
+                    <!-- Radio Button with White Color -->
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:buttonTint="#FFFFFF" />
+
+                    <!-- Label for Terms and Conditions -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="I agree to the terms and conditions"
+                        android:textSize="14sp"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginStart="8dp" />
+                </LinearLayout>
+
+                <!-- Update button -->
+                <Button
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/updateButton"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFC107"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="Submit"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center"
+                    android:src="@drawable/footer" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
